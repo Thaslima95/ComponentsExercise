@@ -7,17 +7,19 @@ import { ContextHook } from './Components/useContext';
 import { CallbackHook } from './Components/useCallback';
 import { ReducerHook } from './Components/useReducer';
 import CustomHook from './Components/customHook';
+import { Hierarchy } from './Components/Hierarchy';
 
 function App() {
   return (
     <>
-    <StateUse/>
+    {/* <StateUse/>
     <Effecthook/>
     <MemoHook/>
     <ContextHook/>
     <CallbackHook/>
     <ReducerHook/>
-    <CustomHook/>
+    <CustomHook/> */}
+    <Hierarchy/>
     </>
   );
 }
