@@ -41,7 +41,6 @@ export const Details = (props) => {
         <p>
           Friends
           <dl>
-            <dt></dt>
             {props.data.friends.map((e, idx) => {
               return <FriendsList id={e.id} name={e.name} key={idx} />;
             })}
