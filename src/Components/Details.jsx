@@ -4,10 +4,19 @@ import { FriendsList } from "./FriendsList";
 import { Details2 } from "./Details2";
 
 export const Details = (props) => {
-  console.log(props);
+  console.log(props + "props");
+  const { data } = props;
+  console.log(data);
   return (
     <>
       <div className="container">
+        <p>
+          {/* {console.log(props.data)} */}
+          {/* {Object.values(data)} */}
+          {/* {Object.keys(data).map((key, idx) => {
+            return <Details2 id={data[key]} title={key} />;
+          })} */}
+        </p>
         <Details2 id={props.data._id} title={"id"} />
         <Details2 id={props.data.index} title={"index"} />
         <Details2 id={props.data.guid} title={"guid"} />
