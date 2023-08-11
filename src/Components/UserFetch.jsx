@@ -11,7 +11,6 @@ function UserFetch() {
         return response.json();
       })
       .then((response) => setUsers(response.data));
-    // console.log(data);
   }, []);
   return (
     <>

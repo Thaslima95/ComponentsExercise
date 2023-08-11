@@ -13,6 +13,7 @@ import { RefuseHook } from './Components/useRef';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import User from './Components/User';
 import UserFetch from './Components/UserFetch';
+import Login from './Components/Login';
 function App() {
   return (
     <>
@@ -38,6 +39,7 @@ function App() {
       <Route path="/customHook" element={<CustomHook/>}></Route>
       <Route path="/users" element={<User/>}></Route>
       <Route path="/userfetch" element={<UserFetch/>}></Route>
+      <Route path="/login" element={<Login/>}></Route>
     </Routes>
     </BrowserRouter>
     </>
